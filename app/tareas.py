@@ -31,7 +31,7 @@ class AlmacenTareas:
         if not isinstance(titulo, str) or not titulo.strip():
             raise ErrorValidacion("El campo 'titulo' es obligatorio")
         titulo = titulo.strip()
-        if len(titulo) >= TITULO_MAXIMO:
+        if len(titulo) > TITULO_MAXIMO:
             raise ErrorValidacion(f"El título admite hasta {TITULO_MAXIMO} caracteres")
         tarea = {"id": self._siguiente_id, "titulo": titulo, "hecha": False}
         self._tareas.append(tarea)
