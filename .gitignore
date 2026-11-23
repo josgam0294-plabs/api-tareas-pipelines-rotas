@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+reportes/
+.env
+
+# Reportes de cobertura en formato JSON
+*.json
